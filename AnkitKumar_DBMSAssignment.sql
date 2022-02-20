@@ -1,6 +1,7 @@
 DROP DATABASE TravelOnTheGo;
 CREATE DATABASE TravelOnTheGo;
 USE TravelOnTheGo;
+
 CREATE TABLE PASSENGER
 (Passenger_name varchar(50),
 Category varchar(15),
@@ -90,6 +91,6 @@ from passenger psng;
 select prc.distance ,prc.price ,
 case 
 when prc.price >1000 then 'expensive' 
-when (prc.price >500 and prc.price<1000) then 'average'
+when (prc.price >500 and prc.price<1000) then 'average cost'
 else 'cheap' end  prc_category 
 from price prc;
